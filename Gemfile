@@ -2,7 +2,13 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 6.5", ">= 6.5.5"
+
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+# gem "rails"
+gem "github-pages", "~> 215", group: :jekyll_plugins
+
+# gem "jekyll-theme-chirpy", "~> 6.5", ">= 6.5.5"
 
 group :test do
   gem "html-proofer", "~> 4.4"
@@ -24,3 +30,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Jekyll Compose
 gem 'jekyll-compose', group: [:jekyll_plugins]
+
